@@ -76,6 +76,7 @@ RUN dnf makecache && \
     dnf makecache && \
     dnf config-manager --disable epel && \
     dnf install -y -d0 --enablerepo=epel \
+        libssh2-devel \
         the_silver_searcher \
         htop && \
     dnf install -y -d0 \
